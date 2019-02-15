@@ -47,7 +47,7 @@ test -d "$OUT_DIR" || mkdir -p "$OUT_DIR"
 
 FILE_NAME="${OUT_DIR}/${SUB_DIR}.zip"
 
-zip "FILE_NAME" "$SUB_DIR"
+zip -r "$FILE_NAME" "$SUB_DIR"
 
 echo
 echo "Leiningen ${VERSION} was packaged to ${FILE_NAME}"
