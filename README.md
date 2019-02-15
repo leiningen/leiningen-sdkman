@@ -2,10 +2,10 @@
 
 ## Prerequisites
 
-  * A Leiningen release (online)
-  * wget
-  * zip
-  * sdkman credentials
+  * A Leiningen release (released at https://github.com/technomancy/leiningen/)
+  * sdkman.io credentials
+  * `wget`
+  * `zip`
 
 ## Packaging
 
@@ -13,14 +13,17 @@
 ./package.sh VERSION BUILD_DIR
 ```
 
-  * `BUILD_DIR needs to be empty`
+  * `BUILD_DIR` cannot exist yet
   * this yields a `zip` file in `BUILD_DIR/out/`
 
 ## Uploading
 
-  * Release this zip file in the `leiningen/leiningen-sdkman` repo and jot down the URL
+  * Release this zip file (manually) in the `leiningen/leiningen-sdkman` repo and jot down the URL
+  * attention: the name needs to match the version, e.g. ´.../releases/download/2.9.0-beta1/leiningen-2.9.0-beta1.zip´
 
 ## Releasing
+
+To release a candidate version on sdkman:
 
 ```
 export CONSUMER_KEY=x
@@ -28,3 +31,7 @@ export CONSUMER_TOKEN=y
 
 ./release.sh VERSION
 ```
+
+Now this can be tested via `sdk install leiningen VERSION`.
+
+The next steps are documented here: https://sdkman.io/vendors
