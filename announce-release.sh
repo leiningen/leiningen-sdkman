@@ -15,4 +15,6 @@ curl -X POST \
 -d "{\"candidate\": \"leiningen\", \"version\": \"${VERSION}\", \"hashtag\": \"leiningen\"}" \
 https://vendors.sdkman.io/announce/struct
 
+echo "Twitter: https://twitter.com/sdkman_"
+
 echo

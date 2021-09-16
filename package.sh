@@ -40,7 +40,7 @@ mkdir lib
 cd lib
 
 echo "Downloading: leiningen-${VERSION} jar"
-wget -q "https://github.com/technomancy/leiningen/releases/download/${VERSION}/leiningen-${VERSION}-standalone.zip" -O "leiningen-${VERSION}-standalone.jar"
+wget -q "https://github.com/technomancy/leiningen/releases/download/${VERSION}/leiningen-${VERSION}-standalone.jar" -O "leiningen-${VERSION}-standalone.jar"
 
 cd ../..
 test -d "$OUT_DIR" || mkdir -p "$OUT_DIR"
