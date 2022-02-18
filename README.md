@@ -7,6 +7,8 @@
   * `wget`
   * `zip`
 
+**Don't do this on Windows or WSL, it will mess up permissions!**
+
 ## Packaging
 
 ```
@@ -18,7 +20,7 @@
 
 ## Uploading
 
-  * Release this zip file (manually) in the `leiningen/leiningen-sdkman` repo and jot down the URL
+  * Release this zip file (manually) in the `leiningen/leiningen-sdkman` repo with a new tag (autocreate is fine)
   * attention: the name needs to match the version, e.g. ´.../releases/download/2.9.0-beta1/leiningen-2.9.0-beta1.zip´
 
 ## Releasing a candidate
