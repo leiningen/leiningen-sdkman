@@ -1,8 +1,10 @@
 # Leiningen packaging for sdkman.io
 
+**Update 2022-07:** This repository is now hosted at https://codeberg.org/wink/leiningen-sdkman
+
 ## Prerequisites
 
-  * A Leiningen release (released at https://github.com/technomancy/leiningen/)
+  * A Leiningen release (released at https://codeberg.org/leiningen/leiningen/)
   * sdkman.io credentials
   * `wget`
   * `zip`
